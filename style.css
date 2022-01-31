@@ -1,62 +1,114 @@
 body{
-    background-color: lightslategray;
+    background-color: black;
 }
-.playerAmount{
+
+
+
+.selectplayer{
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+}
+
+.amountbutton
+{
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: antiquewhite;
+    background-color: grey;
+    font-weight: bold;
+    margin: 5px;
 }
-.main{
+ 
+.ui
+{
+    margin: 5px;
+    height: 50px;
+}
 
-}
-.UI{ 
-    margin-top: 2px;  
-}
-.diceRoll{
-    display: inline-block;
+.roll
+{
+    left: 0px;
+    margin-right: 5px;
     width: 50px;
     height: 50px;
-    background-image:url('img/dice6.png')
+    background-image: url('img/dice1.png');
+    cursor: pointer;
 }
-.playerTurn{
-    display: inline-block;
-    background-color: snow;
-    width: 50px;
-    height: 50px;
 
-}
-.board{
-    position:absolute;
-    background-image: url('img/snakes.png') ;
-    width: 600px;
-    height: 600px;
 
+
+.playerturn
+{   color: snow;
+    font-family: sans-serif;
+    float: left;
+    background-color: grey;
+    width: 60px;
+    height: 30px;
 }
-.pawn{
+
+.board
+{
+    height: 620px;
+    width: 620px;
+}
+
+.boardoverlay
+{
+    left: 610px;
+    top: 182px;
     position: absolute;
+    background-image: url('img/snakes.png');
+    width: 610px;
+    height: 610px;
+}
+
+.pawn
+{
     top: 0px;
+    position: absolute;
     background-size: contain;
     width: 20px;
     height: 20px;
-    display:none;
+    display: none;
 }
-.pawn0{
-    background-image: url('img/pawn0.png');
+
+.pawn0
+{
+   background-image: url('img/pawn0.png') ;
 }
-.pawn1{
-    background-image: url('img/pawn1.png');
+
+.pawn1
+{
+    background-image: url('img/pawn1.png') ;
+    
 }
-.pawn2{
-    background-image: url('img/pawn2.png');
+
+.pawn2
+{
+    background-image: url('img/pawn2.png') ;
 }
-.pawn3{
-    background-image: url('img/pawn3.png');
+
+.pawn3
+{
+    background-image: url('img/pawn3.png') ;
 }
-.tile{
+
+.tile
+{   font-family: sans-serif;
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: purple;
-    color: snow; 
+    background-color: grey;
+    color: snow;
+}
+
+.winner{
+    text-align: center;
+    font-size: 150px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    display: none; 
+    color: snow;
 }

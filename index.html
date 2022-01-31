@@ -2,45 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Snakes and Ladders</title>
 </head>
-
 <body onload="init()">
+    <div class="selectplayer">
+        <div class="amountbutton" onclick="game.start(2)">2</div>
+        <div class="amountbutton" onclick="game.start(3)">3</div>
+        <div class="amountbutton" onclick="game.start(4)">4</div>
+    </div> 
     
-    <div class="selectplayers">
-        <div class="playerAmount">2</div>
-        <div class="playerAmount">3</div>
-        <div class="playerAmount">4</div>
+    <div class="main">
 
+        <div class="ui">
+            <div class="roll" onclick="game.roll()"></div> 
+            <div class="playerturn"></div>
     </div>
-    <div class="mainScreen">
 
-        <div class="UI">
-            <div class="diceRoll"></div>
-            <div class="playerTurn"></div>
-        
-        </div>
-    
-        <div class="board">
+        <div class="board"></div> 
 
-            <div class="tiles">1</div>
-
-        </div>
-
-        <div class="boardOverlay"></div>
         <div class="pawn pawn0"></div>
         <div class="pawn pawn1"></div>
         <div class="pawn pawn2"></div>
         <div class="pawn pawn3"></div>
-
-        
-      
-        
-
+        <div class="boardoverlay"></div>
     </div>
-
-    <div class="winScreen"></div>
+    <div class="winner"></div>
     
 </body>
 </html>
